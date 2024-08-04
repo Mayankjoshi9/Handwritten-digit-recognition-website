@@ -2,6 +2,9 @@
 
 Math Garden is an interactive web application designed to help users practice basic math skills in a fun and engaging way. Users can draw their answers to math questions on a canvas, and the application checks their answers using a machine learning model.
 
+## Machine Learning Model Used
+[Handwritten-Digit-Recognition-ML](https://github.com/Mayankjoshi9/Handwritten-Digit-Recognition-ML)
+
 ## Features
 
 - Randomly generated math questions.
