@@ -10,13 +10,12 @@ body {
   background-size: cover;
 }
 
-/* TODO: Styling by html elemnt: add styling for h1 and h2 */
 h1,
 h2 {
   font-weight: 400;
   font-size: 200px;
 }
-/* TODO: Styling by id: add styling for #title */
+
 #title {
   color: #fc8c93;
   line-height: 50px;
@@ -27,11 +26,8 @@ h2 {
   color: #ffffff;
 }
 
-/* TODO: Styling by id: add styling for canvas */
 #my-canvas {
-  /* vertical-align: top; */
   display: inline;
-  
   border: 5px solid #ffffff;
 }
 
@@ -56,8 +52,55 @@ h2 {
   text-decoration: none;
 }
 
-/* TODO: Styling by class: add Styling for button on hover */
 .btn:hover {
   background-color: #242e6b;
   color: white;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For devices with a max width of 768px (tablets and mobile devices) */
+@media only screen and (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 100px; /* Adjust font size for better readability on smaller screens */
+  }
+
+  #title {
+    font-size: 80px; /* Adjust title size */
+  }
+
+  #my-canvas {
+    width: 120px; /* Adjust canvas size */
+    height: 120px;
+    border-width: 3px; /* Thinner border for smaller screens */
+  }
+
+  .btn {
+    font-size: 40px; /* Adjust button text size */
+    padding: 10px 20px; /* Adjust button padding */
+  }
+}
+
+/* For devices with a max width of 480px (mobile devices) */
+@media only screen and (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 60px; /* Further reduce font size for very small screens */
+  }
+
+  #title {
+    font-size: 50px; /* Adjust title size */
+  }
+
+  #my-canvas {
+    width: 100px; /* Further adjust canvas size */
+    height: 100px;
+    border-width: 2px; /* Thinner border for very small screens */
+  }
+
+  .btn {
+    font-size: 30px; /* Further reduce button text size */
+    padding: 8px 16px; /* Further adjust button padding */
+  }
 }
